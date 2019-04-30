@@ -12,6 +12,6 @@ it('num can not be negative', () => {
 it('num is not a number', () => {
   expect(fib("liczba")).toBeFalsy();
 });
-it('should return result with type of array', () => {
-  expect(Array.isArray(fib(6))).toBe(true);
+it('return an array', () => {
+  expect(Array.isArray(fib(10))).toBe(true);
 });
