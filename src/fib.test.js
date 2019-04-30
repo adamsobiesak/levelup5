@@ -1,6 +1,6 @@
 const fib = require('./fib');
 
-it('return fibonacci number', () => {
+it('return fibonacci sequence', () => {
   expect(fib(10)).toEqual([0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]);
 });
 it('num is not natural number', () => {
