@@ -16,8 +16,7 @@ function fib(num, a = 1, b = 0) {
         for (let i = 2; i < num + 1; i++){
           arr.push(arr[i - 2] + arr[i -1])
         }
-       return arr[num];
+        return arr;
     }
-  }
- 
+  };
   module.exports = fib;
