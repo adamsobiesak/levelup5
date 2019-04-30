@@ -3,18 +3,21 @@ function fib(num, a = 1, b = 0) {
       return b;
 
     } else if (typeof num != 'number') {
-        console.log('num is not a number');
     return;
 
     } else if (num < 0) {
-        console.log('num can not be negative');
     return;
    
-    } else if (num % 1 != 0) {
-    console.log('num is not a natural number');
+    } else if (num % 1 !== 0) {
     return;
+    
     } else {
-      return fib(num - 1, a + b, a);
+        let arr = [0, 1];
+        for (let i = 2; i < num + 1; i++){
+          arr.push(arr[i - 2] + arr[i -1])
+        }
+       return arr[num];
     }
   }
+ 
   module.exports = fib;
